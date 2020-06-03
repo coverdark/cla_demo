@@ -2,5 +2,5 @@
 Demo code for a clustering-based label-aware autoencoder (CLA).
 
 CLA.py demonstrates details of the corresponding CLA paper.
-This code is implemented by TensorFlow.
-We will upload datasets later, so the code is not executable currently.
+This code is implemented with TensorFlow.
+If you are interested in our work or have further questions, please contact coverdark@live.cn
