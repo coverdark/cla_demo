@@ -346,8 +346,6 @@ with tf.Session() as sess:
             print("epoch: {0} loss: {1}".format(epoch, monitor_loss_overall))
             print("epoch: {0} loss: {1}".format(epoch, monitor_constraint_w_AE))
             print("epoch: {0} loss: {1}".format(epoch, monitor_constraint_prior))
-            hit_num_object_level = dls.cal_hit_num(true_labels, monitor_pi_yl)
             hit_num_cluster_level_avg = dls.cal_hit_num(true_labels, monitor_cluster_pi_avg)
-            print("epoch: {0} accuracy(object level): {1}".format(epoch, float(hit_num_object_level)/n_samples))
             print("epoch: {0} accuracy(cluster level avg): {1}".format(epoch, float(hit_num_cluster_level_avg)/n_samples))
     print("Training overall net. Done!")
